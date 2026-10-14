@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   ci:
-    uses: bamr87/bamr87/.github/workflows/standard-ci.yml@main
+    uses: bamr87/bamr87/.github/workflows/standard-ci.yml@v2
     # Node 22 rather than the fleet default (vars.NODE_VERSION, 20): Node 20 is
     # end-of-life, and Vitest 5 and @vscode/vsce 4 require Node 22. This is the
     # caller input the shared workflow provides for exactly this, not a change
