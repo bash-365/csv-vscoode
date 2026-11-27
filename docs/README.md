@@ -23,6 +23,7 @@ These files are also the source of the published documentation site at **[apps.b
 | [Feature parity](FEATURE-PARITY.md) | Comparison with Excel and other CSV tools, and the remaining gaps |
 | [Troubleshooting](troubleshooting.md) | Common problems and their fixes |
 | [Releasing](RELEASING.md) | How a new version is built, packaged and published |
+| [Decisions](adr/README.md) | Architecture decision records: the choices that are hard to reverse, one file each |
 | [Contributing](../CONTRIBUTING.md) | Development setup, architecture, and how to add a feature |
 | [The documentation site](../site/README.md) | How the site is built, which pages are generated, and how to run it |
 

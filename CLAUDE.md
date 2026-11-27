@@ -1,32 +1,6 @@
-# CLAUDE.md
+<!-- kit: sdlc v0.2.0 · pointer only (decision D4, UPS-AGENT-08). The rules live in AGENTS.md. -->
+# csv-vscoode
 
-Guidance for AI coding agents (Claude Code, Copilot, Cursor) working in **csv-vscoode**.
+The canonical agent instructions for this repo are in [AGENTS.md](AGENTS.md). Claude Code loads them through the import below; add nothing else here.
 
-<!-- TODO: one paragraph — what this project is, who it serves, and what "done" looks like here. -->
-
-## Stack & commands
-
-<!-- TODO: fill in the real commands; delete rows that don't apply. -->
-
-```bash
-npm install            # install dependencies
-npm run compile        # dev build (esbuild) / npm run watch
-npm run build          # typecheck + production bundles (CI)
-npm test               # vitest unit tests (test/)
-npm run lint           # eslint
-```
-
-TypeScript VS Code extension. `src/core/` is pure (no `vscode`/DOM imports) and shared by the host, the `webview/` bundle, and tests; keep it that way. Libraries: PapaParse (parse), Tabulator (grid), sql.js (SQL), Chart.js (charts), bundled with esbuild.
-
-## Conventions
-
-- Conventional Commits: `type(scope): description` (`feat`/`fix`/`docs`/`refactor`/`test`/`chore`/`ci`).
-- Default branch is `main` — branch from it and open a PR; never push to it directly.
-- README-First, README-Last: read the nearest `README.md` before changing a
-  directory, and update it after.
-- Don't suppress type errors (`as any`, `@ts-ignore`, `# type: ignore`) or
-  leave empty exception handlers.
-
-## Fleet context
-
-This repo is one of ~40 managed by the [bamr87/bamr87 dash](https://github.com/bamr87/bamr87) (registry: `_data/projects.yml`; tiered baseline: `docs/STANDARDS.md`). It is vendored there as a git submodule: commit and push changes **here** first — the hub only bumps its pointer afterwards. Shared CI, release, schema, and agent kits are seeded from the hub's `templates/`; prefer adopting those over hand-rolling equivalents.
+@AGENTS.md
